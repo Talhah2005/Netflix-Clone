@@ -242,6 +242,7 @@ button:hover {
   .jn {
     font-size: 24px; 
     padding: 0 10px; 
+    text-align: center; 
   }
 }
 .box-container {
@@ -251,92 +252,67 @@ button:hover {
   gap: 20px;
 }
 
-.box1 {
+
+.box1, .box2, .box3, .box4 {
   width: 100%; 
-  max-width: 320px;
-  height: auto; 
-  padding: 30px;
+  max-width: 300px; 
+  height: 280px; 
+  padding: 20px;
   border-radius: 10px;
   background: linear-gradient(135deg, #151138, #0a021c);
   text-align: center;
-}
-.box2{
-  width: 100%; 
-  max-width: 320px;
-  height: auto; 
-  padding: 32px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #151138, #0a021c);
-  text-align: center;
-}
-.box3{
-  width: 100%; 
-  max-width: 320px;
-  height: auto; 
-  padding: 33px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #151138, #0a021c);
-  text-align: center;
-}
-.box4{
-  width: 100%; 
-  max-width: 320px;
-  height: auto; 
-  padding: 32px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #151138, #0a021c);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
+
 .box1 h2, .box2 h2, .box3 h2, .box4 h2 {
-  font-size: 22px;
+  font-size: 30px;
   color: white;
-  padding: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .box1 p, .box2 p, .box3 p, .box4 p {
-  font-size: 16px;
+  font-size: 16px; 
   color: white;
-  padding: 5px;
+  text-align: center;
 }
 
 .bi1, .bi2, .bi3, .bi4 {
-  display: block; 
-  margin: 10px auto; 
-  max-width: 100px; 
+  display: block;
+  margin-top: auto;
+  max-width: 80px;
+  height: auto;
+}
+
+@media (max-width: 1200px) {
+  .box1, .box2, .box3, .box4 {
+    max-width: 300px;
+    height: 360px;
+  }
 }
 
 @media (max-width: 990px) {
-  .box1 {
-    max-width: 100%; 
-    padding: 33px;
-    margin-bottom: 10px;
+  .box1, .box2, .box3, .box4 {
+    max-width: 300px; 
+    height: 370px;
+    margin-bottom: 15px;
   }
-  .box2 {
-    max-width: 100%; 
-    padding: 36px;
-    margin-bottom: 10px;
-  }
-  .box3 {
-    max-width: 100%; 
-    padding: 36px;
-    margin-bottom: 10px;
-  }
-  .box4{
-    max-width: 100%; 
-    padding: 36px;
-    margin-bottom: 10px;
-  }}
+}
+
 @media (max-width: 768px) {
   .box1, .box2, .box3, .box4 {
-    max-width: 100%; 
-    margin-bottom: 10px;
-    gap: 10px;
+    max-width: 90%; /* Full width on smaller screens */
+    height: 350px;
+    margin-bottom: 15px;
   }
 
   .box-container {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
   }
 }
