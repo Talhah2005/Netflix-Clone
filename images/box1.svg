@@ -1,0 +1,25 @@
+<svg width="100" height="80" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Radial Gradient for the Screen Glow -->
+    <radialGradient id="screenGlow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#ff00ff" />
+      <stop offset="50%" stop-color="#9a1b7a" />
+      <stop offset="100%" stop-color="#000000" />
+    </radialGradient>
+
+    <!-- Linear Gradient for the Monitor Frame -->
+    <linearGradient id="monitorFrame" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff0055" />
+      <stop offset="100%" stop-color="#440066" />
+    </linearGradient>
+  </defs>
+
+  <!-- Monitor Frame -->
+  <rect x="20" y="10" width="160" height="100" rx="10" fill="url(#monitorFrame)" />
+
+  <!-- Screen -->
+  <rect x="30" y="20" width="140" height="80" rx="8" fill="url(#screenGlow)" />
+
+  <!-- Stand -->
+  <rect x="85" y="110" width="30" height="20" rx="5" fill="url(#monitorFrame)" />
+</svg>

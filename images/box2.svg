@@ -1,0 +1,22 @@
+<svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Radial Gradient for Circle (Screen Glow Effect) -->
+    <radialGradient id="screenGlow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#ff00ff" />  <!-- Bright Pink Center -->
+      <stop offset="50%" stop-color="#9a1b7a" /> <!-- Deep Purple-Pink -->
+      <stop offset="100%" stop-color="#000000" /> <!-- Black Edges -->
+    </radialGradient>
+
+    <!-- Linear Gradient for the Arrow (Monitor Frame Effect) -->
+    <linearGradient id="monitorFrame" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff0055" />  <!-- Neon Pink -->
+      <stop offset="100%" stop-color="#440066" /> <!-- Dark Purple -->
+    </linearGradient>
+  </defs>
+
+  <!-- Circular Background -->
+  <path d="M36 70.2C54.89 70.2 70.2 54.89 70.2 36C70.2 17.11 54.89 1.8 36 1.8C17.11 1.8 1.8 17.11 1.8 36C1.8 54.89 17.11 70.2 36 70.2Z" fill="url(#screenGlow)"/>
+
+  <!-- Downward Arrow -->
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M39.0849 42.2727L46.3387 35.76L48.8945 38.5142L38.9118 47.477L37.8466 48.4333L36.6071 47.477L24.9899 38.5142L27.0434 35.76L35.4849 42.2727L33.6 21.6016H37.2L39.0849 42.2727Z" fill="url(#monitorFrame)"/>
+</svg>

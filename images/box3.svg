@@ -1,0 +1,13 @@
+<svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Radial Gradient for the Cone -->
+    <radialGradient id="coneGradient" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#ff00ff" />
+      <stop offset="50%" stop-color="#9a1b7a" />
+      <stop offset="100%" stop-color="#000000" />
+    </radialGradient>
+  </defs>
+
+  <!-- Merged Cone Shape -->
+  <path d="M36 5L68 52H4L36 5Z" fill="url(#coneGradient)"/>
+</svg>
